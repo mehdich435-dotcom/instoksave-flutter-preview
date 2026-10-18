@@ -17,6 +17,15 @@
   <base href="/instoksave-flutter-preview/">
 
   <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <script>
+    // Remove any service worker left by an older build so it can never serve a stale app.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (rs) { rs.forEach(function (r) { r.unregister(); }); });
+    }
+  </script>
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
 
@@ -41,6 +50,6 @@
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
-  <script src="flutter_bootstrap.js" async></script>
+  <script src="flutter_bootstrap.js?v=1792325204" async></script>
 </body>
 </html>
