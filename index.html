@@ -41,7 +41,6 @@
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
-  <script>if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){rs.forEach(function(r){r.unregister();});});}</script>
-  <script src="flutter_bootstrap.js?v=1792685705" async></script>
+  <script>if(navigator.serviceWorker){navigator.serviceWorker.getRegistrations().then(r=>r.forEach(x=>x.unregister()))}</script><script src="flutter_bootstrap.js?v=1792785858" async></script>
 </body>
 </html>
